@@ -77,6 +77,35 @@ module.exports = {
           justifyContent: "center",
           color: "#00bad6", // primary
         },
+        ".nexus-nav-menu-btn": {
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          width: "2.5rem",
+          height: "2.5rem",
+          borderRadius: "0.5rem",
+          color: "#929DA8", // text-muted
+          transitionProperty: "color, background-color",
+          transitionDuration: "200ms",
+          "&:hover": {
+            color: "white",
+            backgroundColor: "rgba(255, 255, 255, 0.05)",
+          },
+        },
+        ".nexus-drawer": {
+          position: "fixed",
+          top: 0,
+          right: 0,
+          height: "100%",
+          width: "300px",
+          backgroundColor: "#1E2125", // surface-dark
+          borderLeftWidth: "1px",
+          borderColor: "rgba(255, 255, 255, 0.1)",
+          boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)",
+          transitionProperty: "transform",
+          transitionDuration: "300ms",
+          zIndex: 70,
+        },
         ".glass-panel": {
           backgroundColor: "rgba(30, 33, 37, 0.7)",
           borderWidth: "1px",
