@@ -30,7 +30,21 @@ module.exports = {
     },
   },
   plugins: [
-    ({ addUtilities }) => {
+    ({ addBase, addUtilities, theme }) => {
+      // Global Base Styles
+      addBase({
+        'body': {
+          backgroundColor: "#0f1115", // background-dark
+          color: "white",
+          fontFamily: theme('fontFamily.body'),
+          WebkitFontSmoothing: "antialiased",
+          MozOsxFontSmoothing: "grayscale",
+        },
+        'html': {
+          scrollBehavior: 'smooth',
+        }
+      });
+
       addUtilities({
         ".nexus-container": {
           width: "100%",
@@ -43,6 +57,25 @@ module.exports = {
             paddingRight: "2rem",
           },
           maxWidth: "1400px",
+        },
+        ".nexus-nav-brand": {
+          display: "flex",
+          alignItems: "center",
+          gap: "0.75rem",
+          fontWeight: "700",
+          fontSize: "1.25rem",
+          letterSpacing: "-0.025em",
+          fontFamily: theme('fontFamily.display'),
+        },
+        ".nexus-nav-icon": {
+          height: "2rem",
+          width: "2rem",
+          borderRadius: "0.5rem",
+          backgroundColor: "rgba(0, 186, 214, 0.2)", // primary/20
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "#00bad6", // primary
         },
         ".glass-panel": {
           backgroundColor: "rgba(30, 33, 37, 0.7)",
