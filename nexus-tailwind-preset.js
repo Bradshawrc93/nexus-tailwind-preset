@@ -75,7 +75,7 @@ module.exports = {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          color: "#00bad6", // primary
+          color: "#00bad6", // primary",
         },
         ".nexus-nav-menu-btn": {
           display: "flex",
@@ -105,6 +105,41 @@ module.exports = {
           transitionProperty: "transform",
           transitionDuration: "300ms",
           zIndex: 70,
+        },
+        ".nexus-nav-link": {
+          display: "flex",
+          alignItems: "center",
+          gap: "1rem",
+          color: "#929DA8", // text-muted
+          fontSize: "1.125rem", // lg
+          fontWeight: "500", // medium
+          fontFamily: theme('fontFamily.body'),
+          transitionProperty: "color",
+          transitionDuration: "200ms",
+          "&:hover": {
+            color: "#00bad6", // primary
+          },
+          "& .material-symbols-outlined, & svg": {
+            transitionProperty: "color",
+            transitionDuration: "200ms",
+          },
+          "&:hover .material-symbols-outlined, &:hover svg": {
+            color: "#00bad6",
+          },
+        },
+        ".nexus-drawer-header": {
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          padding: "1.5rem",
+          borderBottomWidth: "1px",
+          borderColor: "rgba(255, 255, 255, 0.05)",
+          "& h3": {
+            color: "white",
+            fontFamily: theme('fontFamily.display'),
+            fontWeight: "700",
+            fontSize: "1.125rem",
+          },
         },
         ".glass-panel": {
           backgroundColor: "rgba(30, 33, 37, 0.7)",
