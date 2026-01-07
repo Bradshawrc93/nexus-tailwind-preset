@@ -32,6 +32,18 @@ module.exports = {
   plugins: [
     ({ addUtilities }) => {
       addUtilities({
+        ".nexus-container": {
+          width: "100%",
+          marginLeft: "auto",
+          marginRight: "auto",
+          paddingLeft: "1.5rem",
+          paddingRight: "1.5rem",
+          "@screen md": {
+            paddingLeft: "2rem",
+            paddingRight: "2rem",
+          },
+          maxWidth: "1400px",
+        },
         ".glass-panel": {
           backgroundColor: "rgba(30, 33, 37, 0.7)",
           borderWidth: "1px",
@@ -51,4 +63,3 @@ module.exports = {
     },
   ],
 };
-
