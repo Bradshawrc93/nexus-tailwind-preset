@@ -1,0 +1,14 @@
+{
+  "name": "nexus-tailwind-preset",
+  "version": "1.0.0",
+  "description": "Tailwind CSS preset for NexusHub projects",
+  "main": "nexus-tailwind-preset.js",
+  "keywords": [
+    "tailwind",
+    "preset",
+    "nexushub"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+
